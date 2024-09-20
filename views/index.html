@@ -9,15 +9,30 @@
 </head>
 
 <body>
-    <h1>Veio da API</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime optio magni ullam atque magnam neque.
-        Necessitatibus consequatur veritatis natus, incidunt eveniet aut? Ipsum aut praesentium dolore libero blanditiis
-        aperiam explicabo.</p>
+    <h1>Digite o seu email para acessar o sistema!</h1>
+    <p>Não perca mais tempo! Cadastre-se no nosso sistema, e receba as novidades da área de tecnologia!</p>
 
-        <form action="">
-            <label for="name">Nome:</label>
-            <input type="text" name="name" id="name">
+
+    <h3>Using CSS to style an HTML Form</h3>
+
+    <div>
+        <form action="/cadastro" method="post">
+            <label for="fname">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <input type="submit" value="Submit">
         </form>
+    </div>
 </body>
 
 </html>
