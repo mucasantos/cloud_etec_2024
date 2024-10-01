@@ -13,6 +13,10 @@ server.use(bodyParser.urlencoded({ extended: true }))
 server.get('/cadastro', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/index.html'))
 })
+
+server.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/home.html'))
+})
 //Exemplo POST com resposta 401
 server.post('/cadastro', (req, res) => {
     console.log(req.body)
